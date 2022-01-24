@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/home"
+        android:id="@+id/nb_home"
+        android:icon="@drawable/icon_home"/>
+
+    <item
+        android:title="@string/category"
+        android:id="@+id/nb_category"
+        android:icon="@drawable/icon_category"/>
+
+    <item
+        android:title="@string/favorite_note"
+        android:id="@+id/nb_favorite"
+        android:icon="@drawable/icon_favorite"/>
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/nb_profile"
+        android:icon="@drawable/icon_profile"/>
+
+
+</menu>

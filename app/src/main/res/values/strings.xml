@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProNote</string>
+    <string name="test">این یک متن تست است و\nهیچ کارکرد دیگری ندارد.</string>
+    <string name="home">خانه</string>
+    <string name="add_note">افزودن یادداشت</string>
+    <string name="favorite_note">علاقه مندی ها</string>
+    <string name="profile">پروفایل</string>
+    <string name="category">دسته بندی ها</string>
+</resources>

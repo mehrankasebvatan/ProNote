@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.MainActivity"
+    tools:openDrawer="right">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_main"
+        android:layout_width="300dp"
+        android:theme="@style/Theme.ProNote"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:fitsSystemWindows="true"
+        android:layoutDirection="rtl"
+        app:menu="@menu/nv_main">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            style="@style/menu_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_menu"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/img_menu"/>
+
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/nb_main" />
+
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:layout_marginBottom="20dp"
+            app:cnb_iconSize="25dp"
+            android:id="@+id/nb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layoutDirection="rtl"
+            app:cnb_menuResource="@menu/nb_main" />
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
